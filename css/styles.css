@@ -283,7 +283,6 @@ header {
     border-radius: 1.25rem;
     background-color: #0a192f00;
     transition: all .3s ease-in-out;
-
 }
 
 .work-card h4:hover {
@@ -773,6 +772,4 @@ footer .logo {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
-
-
 }
