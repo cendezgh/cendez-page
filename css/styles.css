@@ -72,14 +72,13 @@ p {
 }
 
 .banner-title {
-    background-color: #CCD6F6;
+    background-image:
+    linear-gradient(to right, #0a192f60, #0a192f),
+    url('../images/banners-titulos.webp');    
+    background-size: cover;
     height: 200px;
     line-height: 200px;
     text-align: center;
-}
-
-.banner-title h1 {
-    color: #0A192F;
 }
 
 .max-w1200 {
@@ -681,6 +680,10 @@ footer .logo {
         margin-left: auto;
     }
     /* ------------------about page---------------- */
+    .banner-title {
+        height: 120px;
+        line-height: 120px;
+    }
 
     .harmony-container img {
         width: min(80vw, 200px);
