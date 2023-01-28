@@ -72,9 +72,14 @@ p {
 }
 
 .banner-title {
+    background-color: #CCD6F6;
     height: 200px;
     line-height: 200px;
     text-align: center;
+}
+
+.banner-title h1 {
+    color: #0A192F;
 }
 
 .max-w1200 {
