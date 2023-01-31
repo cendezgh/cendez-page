@@ -547,6 +547,25 @@ header {
     width: 100%;
 }
 
+.accordion-button i {
+    color: #0A192F;
+    margin-right: .5rem;
+}
+
+button.accordion-button.collapsed {
+    background-color: #CCD6F6;
+}
+
+button.accordion-button:not(.collapsed){
+    background-color: #8892B0;
+    color: white;
+}
+
+.container-features-hosting {
+    display: flex;
+    flex-direction: row;
+}
+
 /* -------------------------------FOOTER------------------------------------ */
 
 footer {
@@ -745,6 +764,9 @@ footer .logo {
     }
     .service-card {
         padding: 1rem;
+    }
+    .container-features-hosting {
+        flex-direction: column;
     }
 
 }
