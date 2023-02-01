@@ -428,11 +428,6 @@ header {
     padding-left: 10px;
 }
 
-.works-page-main > div > div > p {
-    color: #8892B0;
-}
-
-
 /* --------------about page--------------- */
 .about-principal h2 {
     text-align: center;
@@ -540,7 +535,6 @@ header {
     align-items: center;
     gap: 20px;
     border-radius: 1.25rem;
-
 }
 
 .service-card>img {
@@ -564,6 +558,92 @@ button.accordion-button:not(.collapsed){
 .container-features-hosting {
     display: flex;
     flex-direction: row;
+}
+
+/* --------------------------------Works page--------------------- */
+.works-page-main{
+}
+
+.some-works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
+.some-works > div {
+    padding: 2rem;
+    background-color: #8892B0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border-radius: 1.25rem;
+}
+
+.some-works > div > [class*="work"] {
+    box-shadow: 2px 2px 3px #0A192F inset;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    
+}
+
+.some-works td:first-child {
+    width: 30%;
+}
+
+.some-works h4 {
+    text-align: center;
+    color: #0A192F;
+    font-weight: 700;
+    height: 25px;
+}
+
+.work-1 {
+    background: url("../images/alondras-home.webp") no-repeat center top;
+    background-size: cover;
+    transition: background-position 3s ease-in-out;
+}
+
+.work-2 {
+    background: url("../images/polinizaciones-home.webp") no-repeat center top;
+    background-size: cover;
+    transition: background-position 3s ease-in-out;
+}
+
+.work-3 {
+    background: url("../images/mapachio-home.webp") no-repeat center top;
+    background-size: cover;
+    transition: background-position 3s ease-in-out;
+}
+
+.work-4 {
+    background: url("../images/domenica-home.webp") no-repeat center top;
+    background-size: cover;
+    transition: background-position 3s ease-in-out;
+}
+
+.work-5 {
+    background: url("../images/ajotambo-home.webp") no-repeat center top;
+    background-size: cover;
+    transition: background-position 3s ease-in-out;
+}
+
+.work-6 {
+    background: url("../images/centroespitia-home.webp") no-repeat center top;
+    background-size: cover;
+    transition: background-position 3s ease-in-out;
+}
+
+.some-works > div > [class*="work"]:hover {
+    background-position: center bottom;
+    cursor: pointer;
+}
+
+.mini-logos img {
+    max-width: 20px;
+    max-height: 20px;
 }
 
 /* -------------------------------FOOTER------------------------------------ */
@@ -762,11 +842,17 @@ footer .logo {
     .services-container {
         gap: 20px;
     }
-    .service-card {
+    .service-card,
+    .some-works>div {
         padding: 1rem;
     }
     .container-features-hosting {
         flex-direction: column;
+    }
+
+    /* -------------------Works Page--------------------- */
+    .some-works {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -845,6 +931,11 @@ footer .logo {
     /* ------------------Services page------------------ */
     .services-container {
         display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* -------------------Works Page--------------------- */
+    .some-works {
         grid-template-columns: repeat(1, 1fr);
     }
 }
