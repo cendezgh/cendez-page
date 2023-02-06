@@ -127,16 +127,24 @@ header {
   align-items: center;
 }
 
-.container-header nav label i {
+#hamburger {
   font-size: 25px;
   color: #ccd6f6;
+  display: none;
   margin-right: 15px;
 }
 
-.container-header nav label i,
-.container-header nav input {
+#hamburger::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f410";
+  font-size: 25px;
+}
+
+#menu-toggle {
   display: none;
 }
+
 
 #trick-menu {
   margin: 0;
@@ -939,12 +947,24 @@ footer .logo {
     font-size: 1.5rem;
   }
 
-  .container-header nav label i {
+  #hamburger {
     display: block;
   }
 
   #menu-toggle:checked + #trick-menu {
     left: 0;
+  }
+
+  #menu-toggle:checked + #trick-menu + #hamburger {
+    font-size: 0px;
+  }
+
+  #hamburger::before {
+    font-size: 0px;
+  }
+
+  #menu-toggle:checked + #trick-menu + #hamburger::before {
+    font-size: 25px;
   }
 
   /* ----------------------------SECTIONS------------------------ */
