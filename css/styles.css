@@ -11,7 +11,7 @@ font-family: 'Source Code Pro', monospace; */
   box-sizing: border-box;
 }
 
-/* ----------------bootstrap------------------- */
+/* ----------------PERSONALIZACION BOOTSTRAP------------------- */
 .accordion-button i {
   color: #0a192f;
   margin-right: 0.5rem;
@@ -23,7 +23,7 @@ button.accordion-button.collapsed {
 
 button.accordion-button:not(.collapsed) {
   background-color: #8892b0;
-  color: white;
+  color: #ccd6f6;
 }
 
 
@@ -126,34 +126,22 @@ p {
   color: #8892b0;
 }
 
-/* ------------------------------HEADER---------------------------------- */
-
-header {
-  background-color: #0a192f;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-header .container-header {
-  height: 90px;
-  margin: auto;
+.cards-group {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 1.25rem;
+  margin: 30px 0;
+  row-gap: 50px;
 }
+
+
+/* ------------------------------HEADER---------------------------------- */
 
 .logo {
   height: 50px;
   padding: 0 15px;
-}
-
-header .container-header nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 #hamburger {
@@ -185,12 +173,38 @@ header .container-header nav {
   margin: 0 15px;
 }
 
-.container-header nav ul .text-link {
+
+
+header {
+  background-color: #0a192f;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .container-header {
+  height: 90px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container-header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+header .container-header nav ul .text-link {
   color: #dbe2f9;
 }
 
-.container-header nav ul .text-link:hover,
-.container-header nav ul .text-link.active {
+header .container-header nav ul .text-link:hover,
+header .container-header nav ul .text-link.active {
   color: #64ffda;
   text-shadow: 0px 0px 3px #64ffda;
 }
@@ -204,7 +218,7 @@ header .container-header nav {
 
 .section-hero h1 {
   text-align: center;
-  width: min(700px, 70%);
+  width: calc(min(700px, 70%));
 }
 .section-hero h2 {
   text-align: center;
@@ -213,7 +227,7 @@ header .container-header nav {
 }
 
 .section-hero .foto-ch {
-  width: min(350px, 50%);
+  width: calc(min(350px, 50%));
 }
 
 .section-responsive {
@@ -221,7 +235,7 @@ header .container-header nav {
 }
 
 .section-responsive img {
-  width: min(600px, 80%);
+  width: calc(min(600px, 80%));
 }
 
 .section-about {
@@ -230,25 +244,12 @@ header .container-header nav {
 
 .section-about h2 {
   color: #0a192f;
+  text-align: center;
 }
 
 .section-services {
   background: linear-gradient(to bottom, #dbe2f9 200px, #0a192f 200px);
   padding-bottom: 80px;
-}
-
-.section-services .cards-group .service-home ul li {
-  list-style: disc;
-}
-
-.cards-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  border-radius: 1.25rem;
-  margin: 30px 0;
-  row-gap: 50px;
 }
 
 .section-services .cards-group {
@@ -266,13 +267,14 @@ header .container-header nav {
   gap: 20px;
 }
 
+.section-services .cards-group .service-home ul li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
 .section-services .cards-group .service-home:nth-child(2) {
   border-left: solid 1px #0a192f;
   border-right: solid 1px #0a192f;
-}
-
-.section-services .cards-group .service-home li {
-  margin-bottom: 10px;
 }
 
 .section-works p {
@@ -284,6 +286,24 @@ header .container-header nav {
   width: 350px;
   aspect-ratio: 16 / 9;
   border-radius: 1.25rem;
+}
+
+.section-works .cards-group .work-card h4 {
+  padding-top: 75px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  color: transparent;
+  height: 100%;
+  border-radius: 1.25rem;
+  background-color: #0a192f00;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-works .cards-group .work-card h4:hover {
+  color: #64ffda;
+  box-shadow: 0px 0px 10px #64ffda;
+  background-color: #0a192f;
 }
 
 .section-works .cards-group .wk-card-1 {
@@ -315,24 +335,6 @@ header .container-header nav {
 .section-works .cards-group .wk-card-6 {
   background: url("../images/web-synef.JPG") no-repeat center center;
   background-size: cover;
-}
-
-.section-works .cards-group .work-card h4 {
-  padding-top: 75px;
-  font-size: 1.75rem;
-  font-weight: 700;
-  text-align: center;
-  color: transparent;
-  height: 100%;
-  border-radius: 1.25rem;
-  background-color: #0a192f00;
-  transition: all 0.3s ease-in-out;
-}
-
-.section-works .cards-group .work-card h4:hover {
-  color: #64ffda;
-  box-shadow: 0px 0px 10px #64ffda;
-  background-color: #0a192f;
 }
 
 .section-form {
@@ -420,7 +422,7 @@ header .container-header nav {
 }
 
 .about-principal .harmony-container img {
-  width: min(80vw, 300px);
+  width: calc(min(80vw, 300px));
   object-fit: cover;
   border-radius: 0.75rem;
   float: left;
@@ -430,7 +432,7 @@ header .container-header nav {
 .skills .grid-skills {
   display: grid;
   grid-template-columns: repeat(4, minmax(150px, 300px));
-  grid-template-rows: repeat(3, min(20vw, 200px));
+  grid-template-rows: repeat(3, calc(min(20vw, 200px)));
   gap: 20px;
 }
 
@@ -505,14 +507,14 @@ header .container-header nav {
   text-shadow: 0 0 6px #0a192f;
 }
 /* ----------------------------Services Page------------------------- */
-.services-container {
+.wordpress-service .services-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 50px;
 }
 
-.services-container .service-card {
+.wordpress-service .services-container .service-card {
   padding: 2rem;
   background-color: #8892b0;
   display: flex;
@@ -523,7 +525,7 @@ header .container-header nav {
   border-radius: 1.25rem;
 }
 
-.services-container .service-card img {
+.wordpress-service .services-container .service-card img {
   width: 100%;
 }
 
@@ -756,6 +758,10 @@ footer .logo {
   }
 
   /* ----------------------------GLOBAL-------------------------- */
+  .banner-title {
+    height: 120px;
+  }
+
 
   /* ---------------------------HEADER------------------------- */
   header .container-header {
@@ -829,17 +835,14 @@ footer .logo {
     margin-left: auto;
   }
   /* ------------------about page---------------- */
-  .banner-title {
-    height: 120px;
-  }
-
+  
   .about-principal .harmony-container img {
-    width: min(80vw, 200px);
+    width: calc(min(80vw, 200px));
   }
 
   .skills .grid-skills {
     grid-template-columns: repeat(3, minmax(120px, 200px));
-    grid-template-rows: repeat(4, min(20vw, 150px));
+    grid-template-rows: repeat(4, calc(min(20vw, 150px)));
     gap: 20px;
   }
 
@@ -856,10 +859,10 @@ footer .logo {
   }
 
   /* ------------------Services page------------------ */
-  .services-container {
+  .wordpress-service .services-container {
     gap: 20px;
   }
-  .services-container .service-card,
+  .wordpress-service .services-container .service-card,
   .works-page-main .some-works div {
     padding: 1rem;
   }
@@ -962,7 +965,7 @@ footer .logo {
   }
   .skills .grid-skills {
     grid-template-columns: repeat(2, minmax(120px, 200px));
-    grid-template-rows: 200px repeat(4, min(20vw, 150px));
+    grid-template-rows: 200px repeat(4, calc(min(20vw, 150px)));
     gap: 20px;
   }
 
@@ -972,7 +975,7 @@ footer .logo {
   }
 
   /* ------------------Services page------------------ */
-  .services-container {
+  .wordpress-service .services-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
