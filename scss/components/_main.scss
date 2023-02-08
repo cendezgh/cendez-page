@@ -9,7 +9,7 @@
     h2{
         text-align: center;
         font-weight: 400;
-        color: #8892b0;
+        color: $color-secondary;
     }
     .foto-ch {
         width: calc(min(350px, 50%));
@@ -22,17 +22,17 @@
     }
 }
 .section-about {
-    background-color: #dbe2f9;
+    background-color: $color-light;
     h2 {
-        color: #0a192f;
+        color: $color-dark;
         text-align: center;
     }
 }
 .section-services {
-    background: linear-gradient(to bottom, #dbe2f9 200px, #0a192f 200px);
+    background: linear-gradient(to bottom, $color-light 200px, $color-dark 200px);
     padding-bottom: 80px;
     .cards-group {
-        background-color: #8892b0;
+        background-color: $color-secondary;
         margin: 0;
         .service-home {
             width: calc(100% / 3);
@@ -49,8 +49,8 @@
                 }
             }
             &:nth-child(2) {
-                border-left: solid 1px #0a192f;
-                border-right: solid 1px #0a192f;                
+                border-left: solid 1px $color-dark;
+                border-right: solid 1px $color-dark;                
             }
         }
 
@@ -58,12 +58,12 @@
 }
 .section-works {
     p {
-        color: #8892b0;
+        color: $color-secondary;
         text-align: center;
         .text-link {
-            color: #64ffda;
+            color: $color-focus;
             &:hover {
-                text-shadow: 0px 0px 3px #64ffda;
+                text-shadow: 0px 0px 3px $color-focus;
             }
         }
     }
@@ -80,12 +80,12 @@
                 color: transparent;
                 height: 100%;
                 border-radius: 1.25rem;
-                background-color: #0a192f00;
+                background-color: $color-transparent;
                 transition: all 0.3s ease-in-out;
                 &:hover {
-                    color: #64ffda;
-                    box-shadow: 0px 0px 10px #64ffda;
-                    background-color: #0a192f;
+                    color: $color-focus;
+                    box-shadow: 0px 0px 10px $color-focus;
+                    background-color: $color-dark;
                 }
             }
         }
@@ -117,17 +117,17 @@
 }
 .section-form {
     padding-top: 80px;
-    background: linear-gradient(to bottom, #0a192f 180px, #dbe2f9 180px);
+    background: linear-gradient(to bottom, $color-dark 180px, $color-light 180px);
     .container-form {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 30px;
-        background-color: #8892b0;
+        background-color: $color-secondary;
         border-radius: 1.25rem;
         gap: 30px;
         h3 {
-            color: #0a192f;
+            color: $color-dark;
             text-align: center;
         }
         form {
@@ -173,7 +173,7 @@
             row-gap: 10px;
             label {
                 display: block;
-                color: #dbe2f9;
+                color: $color-light;
             }
             input:not(.button) {
                 min-height: 40px;
@@ -216,15 +216,15 @@
         gap: 20px;
         div {
             position: relative;
-            background-color: #8892b0;
+            background-color: $color-secondary;
             border-radius: 0.75rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             h3 {
-                color: #64ffda;
-                text-shadow: 0 0 6px #0a192f;
+                color: $color-focus;
+                text-shadow: 0 0 6px $color-dark;
                 position: absolute;
                 visibility: hidden;
             }
@@ -272,9 +272,9 @@
                 display: none;
             }
             h3 {
-                color: #64ffda;
+                color: $color-focus;
                 visibility: visible;
-                text-shadow: 0 0 6px #0a192f;
+                text-shadow: 0 0 6px $color-dark;
             }
         }
     }
@@ -289,7 +289,7 @@
         gap: 50px;
         .service-card {
             padding: 2rem;
-            background-color: #8892b0;
+            background-color: $color-secondary;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -318,7 +318,7 @@
         gap: 30px;
         div {
             padding: 2rem;
-            background-color: #8892b0;
+            background-color: $color-secondary;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -327,10 +327,10 @@
             border-radius: 1.25rem;
             h3 {
                 text-align: center;
-                text-shadow: 0 0 6px #0a192f;
+                text-shadow: 0 0 6px $color-dark;
             }
             a[class*="work"] {
-                box-shadow: 2px 2px 200px #0a192f inset;
+                box-shadow: 2px 2px 200px $color-dark inset;
                 width: 100%;
                 aspect-ratio: 3 / 2;
             }
@@ -345,7 +345,7 @@
             }
             h4 {
                 text-align: center;
-                color: #0a192f;
+                color: $color-dark;
                 font-weight: 700;
                 height: 25px;
             }
@@ -412,7 +412,7 @@
             a[class*="work"] {
                 &:hover {
                     background-position: center bottom;
-                    box-shadow: 2px 2px 3px #0a192f inset;
+                    box-shadow: 2px 2px 3px $color-dark inset;
                     cursor: pointer;
                 }
             }

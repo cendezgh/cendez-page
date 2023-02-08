@@ -1,6 +1,6 @@
 footer {
     padding-top: 80px;
-    background-color: #dbe2f9;
+    background-color: $color-light;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +9,7 @@ footer {
         text-transform: uppercase;
         text-align: center;
         font-weight: 700;
-        color: #0a192f;
+        color: $color-dark;
     }
     .icons-container {
         display: flex;
@@ -32,7 +32,7 @@ footer {
             column-gap: 20px;
         }
         i {
-            color: #0a192f;
+            color: $color-dark;
             font-size: 2rem;
             transition: all 0.3s ease-in-out;
             &:hover {
@@ -41,17 +41,17 @@ footer {
         }
     }
     .copyright {
-        color: #0a192f;
+        color: $color-dark;
         text-align: center;
         span {
             a {
-                color: #0a192f;
+                color: $color-dark;
                 font-weight: 700;
                 -webkit-mask-image: linear-gradient(
                   -75deg,
-                  #0a192f 40%,
-                  #0a192f3f 50%,
-                  #0a192f 60%
+                  $color-dark 40%,
+                  $color-dark-degrade 50%,
+                  $color-dark 60%
                 );
                 -webkit-mask-size: 200%;
                 animation: shine 5s linear infinite;
@@ -59,13 +59,13 @@ footer {
         }
     }
     .logo {
-        color: #0a192f;
+        color: $color-dark;
         font-weight: 700;
         -webkit-mask-image: linear-gradient(
           -75deg,
-          #0a192f 40%,
-          #0a192f3f 50%,
-          #0a192f 60%
+          $color-dark 40%,
+          $color-dark-degrade 50%,
+          $color-dark 60%
         );
         -webkit-mask-size: 200%;
         animation: shine 5s linear infinite;
