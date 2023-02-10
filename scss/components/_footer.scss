@@ -12,10 +12,7 @@ footer {
         color: $color-dark;
     }
     .icons-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, row, center, center);
         flex-wrap: wrap;
         row-gap: 10px;
         column-gap: 90px;
@@ -33,7 +30,7 @@ footer {
         }
         i {
             color: $color-dark;
-            font-size: 2rem;
+            font-size: nth($font-size, 8);
             transition: all 0.3s ease-in-out;
             &:hover {
                 transform: scale(1.2);

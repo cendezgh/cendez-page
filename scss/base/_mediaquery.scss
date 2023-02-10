@@ -1,19 +1,19 @@
 @media screen and (max-width: 768px) {
   /* ------------------------ GENERAL------------------------ */
   h1 {
-    font-size: 2.125rem;
+    font-size: nth($font-size, 8);
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: nth($font-size, 5);
   }
 
   h3 {
-    font-size: 1.3125rem;
+    font-size: nth($font-size, 4);
   }
 
   p {
-    font-size: 0.875rem;
+    font-size: nth($font-size, 1)
   }
 
   /* ----------------------------GLOBAL-------------------------- */
@@ -57,7 +57,7 @@
         background-color: $color-secondary;
         width: 100%;
         border: none;
-        border-radius: 1.25rem;
+        border-radius: nth($border-radius, 2);
         ul {
           display: flex;
           flex-direction: row;
@@ -65,19 +65,24 @@
           gap: 10%;
           li {
             width: 45%;
-            font-size: 0.875rem;
+            font-size: nth($font-size, 1)
           }
-        }
-      }
-      .work-card {
-        width: 280px;
-        h4 {
-          font-size: 1.25rem;
         }
       }
     }
   }
-
+  .section-works {
+    .cards-group {
+      a {
+        .work-card {
+          width: 280px;
+          h4 {
+            font-size: nth($font-size, 3);
+          }
+        }
+      }
+    }
+  }
   .section-form {
     .container-form form {
       flex-direction: column;
@@ -165,12 +170,9 @@
   /* -------------------------HEADER------------------------- */
   header {
     .container-header {
+      @include flex (flex, row, space-between, center);
       height: 90px;
       margin: auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
     }
   }
 
@@ -189,7 +191,7 @@
       padding-left: 25%;
       line-height: 15vh;
       a {
-        font-size: 1.5rem;
+        font-size: nth($font-size, 5);
       }
     }
   }
@@ -211,7 +213,7 @@
   }
 
   #menu-toggle:checked + #trick-menu + #hamburger::before {
-    font-size: 25px;
+    font-size: nth($font-size, 6);
   }
 
   /* ----------------------------SECTIONS------------------------ */

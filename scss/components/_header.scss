@@ -6,17 +6,11 @@ header {
     top: 0;
     z-index: 10;
     .container-header {
+        @include flex (flex, row, space-between, center);
         height: 90px;
         margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         nav {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, row, center, center);
             ul {
                 .text-link {
                     color: $color-light;
