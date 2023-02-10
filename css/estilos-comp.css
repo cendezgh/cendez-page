@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap");
+.section-form .container-form form div, footer .icons-container .social-icons, footer .icons-container .contact-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
 /* font-family: 'Inter', sans-serif;
 font-family: 'Source Code Pro', monospace; */
 /* ----------------------------------RESET---------------------------------- */
@@ -281,9 +286,6 @@ header {
       flex-wrap: wrap;
       gap: 30px; }
       .section-form .container-form form div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         gap: 10px; }
       .section-form .container-form form label {
         font-size: 1.25rem;
@@ -382,10 +384,7 @@ header {
       object-fit: cover; }
     .skills .grid-skills .skill-1 .iframe-mobile {
       min-height: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      min-width: 100%;
       object-fit: cover;
       display: none; }
     .skills .grid-skills .skill-1 h3 {
@@ -523,14 +522,8 @@ footer {
     row-gap: 10px;
     column-gap: 90px; }
     footer .icons-container .social-icons {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       column-gap: 20px; }
     footer .icons-container .contact-icons {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       column-gap: 20px; }
     footer .icons-container i {
       color: #0a192f;

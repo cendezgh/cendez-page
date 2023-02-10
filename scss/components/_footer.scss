@@ -17,15 +17,11 @@ footer {
         row-gap: 10px;
         column-gap: 90px;
         .social-icons {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            @extend %flex-row-align-center;
             column-gap: 20px;
         }
         .contact-icons {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            @extend %flex-row-align-center;
             column-gap: 20px;
         }
         i {
