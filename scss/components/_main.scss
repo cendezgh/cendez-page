@@ -88,27 +88,24 @@
           }
           .wk-card-1 {
             background: url("../images/web-ajotambo.JPG") no-repeat center center;
-            background-size: cover;
           }
           .wk-card-2 {
             background: url("../images/web-claudiagomez.JPG") no-repeat center center;
-            background-size: cover;
           }
           .wk-card-3 {
             background: url("../images/web-estheticclass.JPG") no-repeat center center;
-            background-size: cover;
           }
           .wk-card-4 {
             background: url("../images/web-globaltoolservices.JPG") no-repeat center
-              center;
-            background-size: cover;
+            center;
           }
           .wk-card-5 {
             background: url("../images/web-latinrep.JPG") no-repeat center center;
-            background-size: cover;
           }
           .wk-card-6 {
             background: url("../images/web-synef.JPG") no-repeat center center;
+          }
+          [class*="wk-card"] {
             background-size: cover;
           }
     }
@@ -173,14 +170,7 @@
         display: block;
         color: $color-light;
       }
-      input:not(.button) {
-        min-height: 40px;
-        width: 100%;
-        border: none;
-        border-radius: nth($border-radius, 1);
-        padding-left: 10px;
-      }
-      textarea {
+      input:not(.button), textarea {
         min-height: 40px;
         width: 100%;
         border: none;
@@ -337,69 +327,47 @@
       }
       a.work-1 {
         background: url("../images/alondras-home.webp") no-repeat center top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-2 {
         background: url("../images/polinizaciones-home.webp") no-repeat center
           top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-3 {
         background: url("../images/mapachio-home.webp") no-repeat center top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-4 {
         background: url("../images/domenica-home.webp") no-repeat center top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-5 {
         background: url("../images/ajotambo-home.webp") no-repeat center top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-6 {
         background: url("../images/centroespitia-home.webp") no-repeat center
           top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-7 {
         background: url("../images/claudiagomez-home.webp") no-repeat center top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-8 {
         background: url("../images/entrehilos-home.webp") no-repeat center top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-9 {
         background: url("../images/estheticclass-home.webp") no-repeat center
           top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-10 {
         background: url("../images/globaltoolservices-home.webp") no-repeat
           center top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-11 {
         background: url("../images/latinrep-home.webp") no-repeat center top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a.work-12 {
         background: url("../images/synef-home.webp") no-repeat center top;
-        background-size: cover;
-        transition: background-position 3s ease-in-out;
       }
       a[class*="work"] {
+        background-size: cover;
+        transition: background-position 3s ease-in-out;
         &:hover {
           background-position: center bottom;
           box-shadow: 2px 2px 3px $color-dark inset;

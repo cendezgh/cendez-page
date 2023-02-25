@@ -16,11 +16,7 @@ footer {
     flex-wrap: wrap;
     row-gap: 10px;
     column-gap: 90px;
-    .social-icons {
-      @extend %flex-row-align-center;
-      column-gap: 20px;
-    }
-    .contact-icons {
+    .social-icons, .contact-icons {
       @extend %flex-row-align-center;
       column-gap: 20px;
     }
